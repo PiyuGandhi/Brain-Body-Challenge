@@ -53,3 +53,66 @@ plt.plot(X_Test,reg.predict(X_Test),'b')
 plt.show()
 
 print "Accuracy Lasso :- " , reg.score(X_Test,Y_Test)
+
+# Decision Tree Regression
+
+from sklearn.tree import DecisionTreeRegressor
+
+# Fitting the data
+reg = DecisionTreeRegressor()
+reg.fit(X_Train,Y_Train)
+
+# Predicting
+pred = reg.predict(X_Test)
+
+# Visualization
+# Training Data
+plt.scatter(X_Train,Y_Train)
+
+plt.plot(X_Test,reg.predict(X_Test),'b')
+plt.show()
+
+print "Accuracy Decision Tree :- " , reg.score(X_Test,Y_Test)
+
+
+# Ridge Regression
+
+
+from sklearn.linear_model import Ridge
+
+# Fitting the data
+reg = Ridge()
+reg.fit(X_Train,Y_Train)
+
+# Predicting
+pred = reg.predict(X_Test)
+
+# Visualization
+# Training Data
+plt.scatter(X_Train,Y_Train)
+
+plt.plot(X_Test,reg.predict(X_Test),'b')
+plt.show()
+
+print "Accuracy Ridge :- " , reg.score(X_Test,Y_Test)
+
+# Elastic Net  Lasso
+
+
+from sklearn.linear_model import ElasticNet
+
+# Fitting the data
+reg = ElasticNet()
+reg.fit(X_Train,Y_Train)
+
+# Predicting
+pred = reg.predict(X_Test)
+
+# Visualization
+# Training Data
+plt.scatter(X_Train,Y_Train)
+
+plt.plot(X_Test,reg.predict(X_Test),'b')
+plt.show()
+
+print "Accuracy Elastic Net :- " , reg.score(X_Test,Y_Test)

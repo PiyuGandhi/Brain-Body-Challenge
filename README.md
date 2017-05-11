@@ -9,3 +9,8 @@ Algorithms Used :-
 
 1. Linear Regression :- 82.17% Accuracy 
 2. Lasso :- 84.4% Accuracy
+
+
+It also provides visualization of the regression fit and the data points using matplotlib library
+
+Credits for datasets:- Siraj Raval 
